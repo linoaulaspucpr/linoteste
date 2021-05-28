@@ -16,7 +16,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
         name: dev
-        url: 'google.com'
     needs: build
     steps:
       - name: Run a one-line script
@@ -27,7 +26,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
         name: hmg
-        url: 'google.com'
     needs: deploy-dev
     steps:
       - name: Run a one-line script
@@ -37,7 +35,6 @@ jobs:
     runs-on: ubuntu-latest
     environment: 
         name: prd
-        url: 'google.com'
     needs: deploy-hmg
     steps:
       - name: Run a one-line script
